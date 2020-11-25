@@ -9,4 +9,4 @@ Color-blind plugin converts hex codes into ones that would be seen by people wit
 https://github.com/skratchdot/color-blind
 
 Color selection tool:
-https://seballot.github.io/spectrum/
+https://github.com/casesandberg/react-color
