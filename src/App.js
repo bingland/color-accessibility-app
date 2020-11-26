@@ -10,24 +10,35 @@ import chroma from 'chroma-js' // https://vis4.net/chromajs/#quick-start
 import blinder from 'color-blind' // https://github.com/skratchdot/color-blind
 
 // color picker
-import { SketchPicker } from 'react-color' // https://casesandberg.github.io/react-color/
+// import { SketchPicker } from 'react-color' // https://casesandberg.github.io/react-color/
 
 // COMPONENTS
 import Background from './components/Background/Background'
+import Header from './components/Header/Header'
+import ActionArea from './components/ActionArea/ActionArea'
 
 const App = () => {
 
   const [backgroundColor, setBackgroundColor] = useState('#DE6464')
   const [textColor, setTextColor] = useState('#FFFFFF')
 
-  let chromaColor = chroma('pink').darken().saturate(2).hex()
-  let blindColor = blinder.protanopia('#42dead')
+  // useEffect(() => {
+
+  // }, [backgroundColor])
+
+  // let chromaColor = chroma('pink').darken().saturate(2).hex()
+  // let blindColor = blinder.protanopia('#42dead')
 
   return (
     <div className="App">
       <Background color={backgroundColor} />
-      Chroma Color: { chromaColor } Blind Color: { blindColor }
-      <SketchPicker />
+      <Header />
+      <ActionArea 
+        backgroundColor={backgroundColor}
+        textColor={textColor}
+        setBackgroundColor={setBackgroundColor}
+        setTextColor={setTextColor}
+      />
     </div>
   );
 }
