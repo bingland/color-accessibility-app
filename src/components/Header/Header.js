@@ -15,11 +15,11 @@ const Header = (props) => {
                 </filter>
             </defs>
             <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Polygon_1)">
-                <path id="Polygon_1-2" data-name="Polygon 1" d="M28.838,15.014a10,10,0,0,1,17.324,0L66.348,50a10,10,0,0,1-8.662,15H17.314A10,10,0,0,1,8.652,50Z" transform="translate(12 12)" fill={props.color}/>
+                <path id="Polygon_1-2" data-name="Polygon 1" d="M28.838,15.014a10,10,0,0,1,17.324,0L66.348,50a10,10,0,0,1-8.662,15H17.314A10,10,0,0,1,8.652,50Z" transform="translate(12 12)" fill="#fff"/>
             </g>
             </svg>
 
-            <h1>Prism</h1>
+            <h1 style={{color: "#fff"}}>Prism</h1>
         </div>
     )
 }

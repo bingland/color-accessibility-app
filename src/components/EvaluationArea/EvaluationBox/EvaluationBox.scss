@@ -1,0 +1,53 @@
+$passGreen: #89F595;
+
+.EvaluationBox {
+    display: grid;
+    grid-template-columns: auto 90px;
+    padding: 12px;
+    background: white;
+    color: black; // DELETE
+    border-radius: 8px;
+    height: 45px;
+    margin-top: 11px;
+
+    .text {
+        .title {
+            display: flex;
+            h2 {
+                font-weight: 600;
+                font-size: 20px;
+            }
+            .grade {
+                font-weight: 600;
+                background-color: $passGreen;
+                color: darken($passGreen, 40%);
+                font-size: 12px;
+                padding: 3px;
+                border-radius: 3px;
+                margin-left: 8px;
+            }
+        }
+        .desc {
+            padding: 5px;
+            padding-left: 0;
+            padding-right: 15px;
+            p {
+                font-size: 12px;
+                line-height: 1.5;
+            }
+        }
+    }
+    .preview {
+        padding: 4px;
+        top: -4px;
+        right: -4px;
+        position: relative;
+        border-radius: 8px;
+        height: calc(100% - 4px);
+        font-weight: 600;
+        font-size: 30px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+}

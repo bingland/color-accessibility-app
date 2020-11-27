@@ -10,7 +10,7 @@ const ColorInputButton = (props) => {
             <button onClick={() => setActive(!active)}>{props.hex}</button>
             <h2>{props.text}</h2>
             
-            { active === true && (
+            { active && (
                 <SketchPicker 
                     color= { props.color }
                     onChange = {(color) => { props.trigger(color.hex) }}
