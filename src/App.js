@@ -22,23 +22,22 @@ const App = () => {
   const [backgroundColor, setBackgroundColor] = useState('#DE6464')
   const [textColor, setTextColor] = useState('#FFFFFF')
 
-  // useEffect(() => {
-
-  // }, [backgroundColor])
-
   // let chromaColor = chroma('pink').darken().saturate(2).hex()
   // let blindColor = blinder.protanopia('#42dead')
 
   return (
-    <div className="App">
+    <div className="App" style={{color: textColor}}>
       <Background color={backgroundColor} />
-      <Header />
-      <ActionArea 
-        backgroundColor={backgroundColor}
-        textColor={textColor}
-        setBackgroundColor={setBackgroundColor}
-        setTextColor={setTextColor}
-      />
+      <Header color={textColor} />
+      <div className="appGrid">
+        <ActionArea 
+          backgroundColor={backgroundColor}
+          textColor={textColor}
+          setBackgroundColor={setBackgroundColor}
+          setTextColor={setTextColor}
+        />
+        <div>hi lol</div>
+      </div>
     </div>
   );
 }

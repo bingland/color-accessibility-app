@@ -1,4 +1,11 @@
 *, body, html {
-    color: white;
+    //color: white;
     font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+    .appGrid {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
 }
