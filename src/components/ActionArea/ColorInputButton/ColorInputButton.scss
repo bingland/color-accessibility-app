@@ -3,9 +3,21 @@
     button {
         background-color: white;
         border-radius: 15px;
-        padding: 5px;
+        padding: 10px;
         color: black;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
+        width: 150px;
+        border: none;
+        box-shadow: 3px 3px 18px 0px rgba(50, 50, 50, 0.16);
+    }
+
+    h2 {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .sketch-picker {
+        position: absolute;
     }
 }
