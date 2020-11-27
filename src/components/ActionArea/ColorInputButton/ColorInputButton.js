@@ -12,8 +12,8 @@ const ColorInputButton = (props) => {
             
             { active === true && (
                 <SketchPicker 
-                    color= { props.backgroundColor }
-                    onChange = {(color) => { props.setBackgroundColor(color.hex) }}
+                    color= { props.color }
+                    onChange = {(color) => { props.trigger(color.hex) }}
                 />
             )}
             

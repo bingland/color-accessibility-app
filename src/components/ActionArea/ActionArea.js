@@ -12,14 +12,14 @@ const ActionArea = (props) => {
                 <ColorInputButton 
                     hex={props.backgroundColor}
                     text="Background"
-                    textColor={props.backgroundColor}
-                    setBackgroundColor={props.setBackgroundColor}
+                    color={props.backgroundColor}
+                    trigger={props.setBackgroundColor}
                 />
                 <ColorInputButton 
                     hex={props.textColor}
                     text="Text Color"
-                    textColor={props.textColor}
-                    setBackgroundColor={props.setTextColor}
+                    color={props.textColor}
+                    trigger={props.setTextColor}
                 />
             </div>
         </div>
