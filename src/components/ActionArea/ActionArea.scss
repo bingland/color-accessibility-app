@@ -1,6 +1,5 @@
 .ActionArea {
-    border: 1px solid rgba(199, 199, 199, 0.486);
-    padding: 30px;
+    padding: 40px;
     text-align: center;
 
     textarea {
@@ -11,11 +10,14 @@
         outline: none;
         font-size: 40px;
         font-weight: 400;
-        width: 70%;
-        height: 150px;
+        width: 100%;
+        max-width: 520px;
+        line-height: 1.5;
+        height: 110px;
         text-align: center;
         position: relative;
         overflow: hidden;
+        padding-bottom: 70px;
     }
 
     .colorInputs {

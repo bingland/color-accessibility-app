@@ -7,7 +7,7 @@ const ActionArea = (props) => {
     return (
         <div className="ActionArea">
 
-            <textarea defaultValue="The quick brown fox jumps over the lazy dog" style={{color: props.textColor}}></textarea>
+            <textarea defaultValue="The quick brown fox jumps over the lazy dog" style={{color: props.textColor}} rows="2"></textarea>
             <div className="colorInputs">
                 <ColorInputButton 
                     hex={props.backgroundColor}

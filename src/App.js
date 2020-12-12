@@ -21,19 +21,21 @@ const App = () => {
   return (
     <div className="App" style={{color: textColor}}>
       <Background color={backgroundColor} />
-      <Header color={textColor} />
-      <div className="appGrid">
-        <ActionArea 
-          backgroundColor={backgroundColor}
-          textColor={textColor}
-          setBackgroundColor={setBackgroundColor}
-          setTextColor={setTextColor}
-        />
-        <EvaluationArea
-          contrast={contrast}
-          backgroundColor={backgroundColor}
-          textColor={textColor}
-        />
+      <div className="wrapper">
+        <Header color={textColor} />
+        <div className="appGrid">
+          <ActionArea 
+            backgroundColor={backgroundColor}
+            textColor={textColor}
+            setBackgroundColor={setBackgroundColor}
+            setTextColor={setTextColor}
+          />
+          <EvaluationArea
+            contrast={contrast}
+            backgroundColor={backgroundColor}
+            textColor={textColor}
+          />
+        </div>
       </div>
     </div>
   );

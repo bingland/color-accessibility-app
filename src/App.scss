@@ -9,8 +9,15 @@
 }
 
 .App {
-    .appGrid {
-        display: grid;
-        grid-template-columns: auto 400px;
+    .wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+        height: calc(100vh - 101px);
+
+        .appGrid {
+            display: grid;
+            grid-template-columns: auto 455px;
+            align-items: center;
+        }
     }
 }
