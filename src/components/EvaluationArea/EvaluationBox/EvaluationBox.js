@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './EvaluationBox.scss'
 
+import EvaluationGrade from '../EvaluationGrade/EvaluationGrade'
+
 // converts hex codes into ones that would be seen by people with the different impairments; 
 // apply the same process to obtain the color ratios and determine their grade according to the WCC (or whatever it's called)
 import blinder from 'color-blind' // https://github.com/skratchdot/color-blind
@@ -80,7 +82,7 @@ const EvaluationBox = (props) => {
             <div className="text">
                 <div className="title">
                     <h2>{props.title}</h2>
-                    <div className="grade">{props.grade}</div>
+                    <div className="grade"><EvaluationGrade backgroundColor={backgroundColor} textColor={textColor} /></div>
                 </div>
                 <div className="desc">
                     <p>{props.desc}</p>

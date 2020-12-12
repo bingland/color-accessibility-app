@@ -1,4 +1,5 @@
 $passGreen: #89F595;
+$failRed: #EB9E9E;
 
 .EvaluationBox {
     display: grid;
@@ -16,15 +17,26 @@ $passGreen: #89F595;
             h2 {
                 font-weight: 600;
                 font-size: 20px;
+                text-transform: capitalize;
             }
             .grade {
                 font-weight: 600;
-                background-color: $passGreen;
-                color: darken($passGreen, 40%);
-                font-size: 12px;
-                padding: 3px;
                 border-radius: 3px;
-                margin-left: 8px;
+                font-size: 12px;
+
+                .pass, .fail {
+                    border-radius: 3px;
+                    padding: 3px;
+                    margin-left: 8px;
+                }
+                .pass {
+                    background-color: $passGreen;
+                    color: darken($passGreen, 40%);
+                }
+                .fail {
+                    background-color: $failRed;
+                    color: darken($failRed, 40%);
+                }
             }
         }
         .desc {
