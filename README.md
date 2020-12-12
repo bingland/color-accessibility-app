@@ -10,3 +10,6 @@ https://github.com/skratchdot/color-blind
 
 Color selection tool:
 https://github.com/casesandberg/react-color
+
+Simplebar-react for good looking scroll bars. 
+https://github.com/Grsmto/simplebar/tree/master/packages/simplebar-react
