@@ -1,0 +1,29 @@
+$passGreen: #89F595;
+$failRed: #DD6363;
+
+.EvaluationCheckmark {
+    border-radius: 50%;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: -53px;
+    right: -34px;
+
+    svg {
+        position: relative;
+        top: 11px;
+        max-width: 27px;
+    }
+}
+
+.EvaluationCheckmark.pass {
+    background-color: $passGreen;
+}
+
+.EvaluationCheckmark.fail {
+    background-color: $failRed;
+
+    svg {
+        max-width: 23px;
+    }
+}

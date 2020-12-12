@@ -1,6 +1,10 @@
 $passGreen: #89F595;
 
 .EvaluationArea {
+    margin-right: 50px;
+    height: 100%;
+    display: grid;
+    align-items: center;
 
     .EvaluationWindow {
         background-color: #d8d8d88a;
@@ -9,6 +13,7 @@ $passGreen: #89F595;
 
         .scores {
             display: grid;
+            position: relative;
             grid-template-columns: 1fr 1fr;
             text-align: center;
             margin: 20px 0;
@@ -18,19 +23,23 @@ $passGreen: #89F595;
                 color: white;
                 
                 p {
-                    font-size: 15px;
-                    padding-bottom: 5px;
+                    font-size: 18px;
+                    padding-bottom: 7px;
                     font-weight: 400;
                 }
                 h2 {
-                    font-size: 40px;
+                    font-size: 45px;
                     font-weight: 600;
                 }
             }
         }
 
         .evaluations {
+            max-height: 620px;
 
+            .simplebar-scrollbar::before {
+                background-color: white;
+            }
         }
     }
 }

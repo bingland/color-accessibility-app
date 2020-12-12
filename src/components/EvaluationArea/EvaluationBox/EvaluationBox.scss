@@ -5,11 +5,12 @@ $failRed: #EB9E9E;
     display: grid;
     grid-template-columns: auto 90px;
     padding: 12px;
-    background: white;
+    background: rgba(255, 255, 255, 0.96);
     color: black; // DELETE
     border-radius: 8px;
     height: 45px;
     margin-top: 11px;
+    margin-right: 20px;
 
     .text {
         .title {
@@ -62,4 +63,8 @@ $failRed: #EB9E9E;
         justify-items: center;
         align-items: center;
     }
+}
+
+.EvaluationBox:first-child {
+    margin-top: 2px;
 }

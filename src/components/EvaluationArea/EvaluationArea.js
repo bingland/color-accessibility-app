@@ -1,8 +1,13 @@
 import React from 'react'
+
+import SimpleBar from 'simplebar-react'
+import 'simplebar/dist/simplebar.min.css'
+
 import './EvaluationArea.scss'
 
 import EvaluationBox from './EvaluationBox/EvaluationBox'
 import EvaluationGrade from './EvaluationGrade/EvaluationGrade'
+import EvaluationCheckmark from './EvaluationCheckmark/EvaluationCheckmark'
 
 const EvaluationArea = (props) => {
 
@@ -10,6 +15,7 @@ const EvaluationArea = (props) => {
         <div className="EvaluationArea">
             <div className="EvaluationWindow">
                 <div className="scores">
+                    <EvaluationCheckmark backgroundColor={props.backgroundColor} textColor={props.textColor} />
                     <div className="scoreGrade">
                         <p>Contrast Ratio</p>
                         <h2>{props.contrast}:1</h2>
@@ -21,6 +27,10 @@ const EvaluationArea = (props) => {
                 </div>
                 
                 <div className="evaluations">
+                    <SimpleBar 
+                        style={{ maxHeight: 550 }} 
+                        autoHide={false}
+                    >
                     <EvaluationBox 
                         title="Regular Vision"
                         desc="Can distinguish all three primary colors"
@@ -34,26 +44,26 @@ const EvaluationArea = (props) => {
                         textColor={props.textColor} 
                     />
                     <EvaluationBox 
-                        title="deuteranomaly"
-                        desc="Has trouble distinguishing greens"
-                        backgroundColor={props.backgroundColor} 
-                        textColor={props.textColor} 
-                    />
-                    <EvaluationBox 
-                        title="tritanomaly"
-                        desc="Has trouble distinguishing blues"
-                        backgroundColor={props.backgroundColor} 
-                        textColor={props.textColor} 
-                    />
-                    <EvaluationBox 
                         title="protanopia"
                         desc="Can't distinguish reds"
                         backgroundColor={props.backgroundColor} 
                         textColor={props.textColor} 
                     />
                     <EvaluationBox 
+                        title="deuteranomaly"
+                        desc="Has trouble distinguishing greens"
+                        backgroundColor={props.backgroundColor} 
+                        textColor={props.textColor} 
+                    />
+                    <EvaluationBox 
                         title="Deuteranopia"
                         desc="Can't distinguish greens"
+                        backgroundColor={props.backgroundColor} 
+                        textColor={props.textColor} 
+                    />
+                    <EvaluationBox 
+                        title="tritanomaly"
+                        desc="Has trouble distinguishing blues"
                         backgroundColor={props.backgroundColor} 
                         textColor={props.textColor} 
                     />
@@ -75,6 +85,7 @@ const EvaluationArea = (props) => {
                         backgroundColor={props.backgroundColor} 
                         textColor={props.textColor} 
                     />
+                    </SimpleBar>
                 </div>
             </div>
         </div>
