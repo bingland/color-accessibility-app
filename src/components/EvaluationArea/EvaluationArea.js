@@ -1,10 +1,6 @@
 import React from 'react'
 import './EvaluationArea.scss'
 
-// converts hex codes into ones that would be seen by people with the different impairments; 
-// apply the same process to obtain the color ratios and determine their grade according to the WCC (or whatever it's called)
-import blinder from 'color-blind' // https://github.com/skratchdot/color-blind
-
 import EvaluationBox from './EvaluationBox/EvaluationBox'
 
 const EvaluationArea = (props) => {
@@ -33,22 +29,57 @@ const EvaluationArea = (props) => {
                         textColor={props.textColor} 
                     />
                     <EvaluationBox 
-                        title="Regular Vision"
-                        desc="Can distinguish all three primary colors"
+                        title="protanomaly"
+                        desc="Has trouble distinguishing reds"
                         grade="AAA"
                         backgroundColor={props.backgroundColor} 
                         textColor={props.textColor} 
                     />
                     <EvaluationBox 
-                        title="Regular Vision"
-                        desc="Can distinguish all three primary colors"
+                        title="deuteranomaly"
+                        desc="Has trouble distinguishing greens"
                         grade="AAA"
                         backgroundColor={props.backgroundColor} 
                         textColor={props.textColor} 
                     />
                     <EvaluationBox 
-                        title="Regular Vision"
-                        desc="Can distinguish all three primary colors"
+                        title="tritanomaly"
+                        desc="Has trouble distinguishing blues"
+                        grade="AAA"
+                        backgroundColor={props.backgroundColor} 
+                        textColor={props.textColor} 
+                    />
+                    <EvaluationBox 
+                        title="protanopia"
+                        desc="Can't distinguish reds"
+                        grade="AAA"
+                        backgroundColor={props.backgroundColor} 
+                        textColor={props.textColor} 
+                    />
+                    <EvaluationBox 
+                        title="Deuteranopia"
+                        desc="Can't distinguish greens"
+                        grade="AAA"
+                        backgroundColor={props.backgroundColor} 
+                        textColor={props.textColor} 
+                    />
+                    <EvaluationBox 
+                        title="tritanopia"
+                        desc="Can't distinguish blues"
+                        grade="AAA"
+                        backgroundColor={props.backgroundColor} 
+                        textColor={props.textColor} 
+                    />
+                    <EvaluationBox 
+                        title="achromatomaly"
+                        desc="Nearly colorblind"
+                        grade="AAA"
+                        backgroundColor={props.backgroundColor} 
+                        textColor={props.textColor} 
+                    />
+                    <EvaluationBox 
+                        title="achromatopsia"
+                        desc="Completely colorblind"
                         grade="AAA"
                         backgroundColor={props.backgroundColor} 
                         textColor={props.textColor} 
