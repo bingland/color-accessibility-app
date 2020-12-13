@@ -28,7 +28,7 @@ const EvaluationArea = (props) => {
                 
                 <div className="evaluations">
                     <SimpleBar 
-                        style={{ maxHeight: 550 }} 
+                        style={{ maxHeight: 475 }} 
                         autoHide={false}
                     >
                     <EvaluationBox 

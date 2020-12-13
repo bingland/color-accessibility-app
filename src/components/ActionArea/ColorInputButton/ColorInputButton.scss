@@ -21,3 +21,9 @@
         position: absolute;
     }
 }
+
+@media (max-width: 867px) { 
+    .ColorInputButton {
+        margin-bottom: 20px;
+    }
+}

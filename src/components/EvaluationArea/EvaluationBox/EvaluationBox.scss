@@ -56,15 +56,33 @@ $failRed: #EB9E9E;
         right: -4px;
         position: relative;
         border-radius: 8px;
-        height: calc(100% - 4px);
+        height: calc(44px);
         font-weight: 600;
         font-size: 30px;
         display: grid;
         justify-items: center;
         align-items: center;
+        width: 82px;
     }
 }
 
 .EvaluationBox:first-child {
     margin-top: 2px;
+}
+
+@media (max-width: 472px) { 
+    .EvaluationBox {
+        height: auto;
+        grid-template-columns: auto 70px;
+        .text .title {
+            h2 {
+                font-size: 14px;
+            }
+        }
+        .preview { 
+            font-size: 20px;
+            width: 60px;
+            
+        }
+    }
 }

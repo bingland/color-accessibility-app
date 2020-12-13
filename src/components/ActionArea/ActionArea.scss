@@ -28,3 +28,49 @@
         margin: 0 auto;
     }
 }
+
+@media (max-width: 1025px) { 
+    .ActionArea {
+        textarea {
+            font-size: 30px;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 867px) { 
+    .ActionArea {
+        textarea {
+            height: 155px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            overflow: hidden;
+            padding: 0;
+        }
+        .colorInputs {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 789px) { 
+    .ActionArea {
+        textarea {
+            padding-bottom: 10px;
+            height: 120px;
+            line-height: 1.5;
+            //font-size: 40px;
+        }
+        .colorInputs {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 414px) { 
+    .ActionArea {
+        .colorInputs {
+            grid-template-columns: 1fr;
+        }
+    }
+}

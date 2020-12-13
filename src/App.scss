@@ -9,15 +9,32 @@
 }
 
 .App {
+    height: 100vh;
+
     .wrapper {
-        max-width: 1400px;
+        max-width: 1200px;
         margin: 0 auto;
-        height: calc(100vh - 101px);
+        height: 100%;
 
         .appGrid {
             display: grid;
-            grid-template-columns: auto 455px;
+            grid-template-columns: 600px auto;
             align-items: center;
+            height: calc(100vh - 101px * 2.5);
         }
+    }
+}
+
+@media (max-width: 1040px) { 
+    .App .wrapper .appGrid {
+        grid-template-columns: auto 470px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 789px) { 
+    .App .wrapper .appGrid {
+        grid-template-columns: 1fr;
+        padding-bottom: 50px;
     }
 }

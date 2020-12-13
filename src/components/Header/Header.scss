@@ -9,3 +9,13 @@
         text-shadow: 3px 3px 11px rgba(0, 0, 0, 0.096);
     }
 }
+
+@media (max-width: 588px) { 
+    .Header {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 101px 200px;
+        padding-left: 0;
+        justify-content: center;
+    }
+}

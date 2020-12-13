@@ -27,3 +27,21 @@ $failRed: #DD6363;
         max-width: 23px;
     }
 }
+
+@media (max-width: 472px) { 
+    .EvaluationCheckmark {
+        height: 40px;
+        width: 40px;
+        right: -15px;
+
+        svg {
+            max-width: 20px;
+            top: 7px;
+        }
+    }
+    .EvaluationCheckmark.fail {
+        svg {
+            max-width: 18px;
+        }
+    }
+}
