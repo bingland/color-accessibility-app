@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SimpleBar from 'simplebar-react'
+import SimpleBar from 'simplebar-react' // https://github.com/Grsmto/simplebar/tree/master/packages/simplebar-react
 import 'simplebar/dist/simplebar.min.css'
 
 import './EvaluationArea.scss'
