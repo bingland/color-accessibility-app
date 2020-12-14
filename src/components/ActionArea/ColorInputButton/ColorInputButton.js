@@ -3,8 +3,6 @@ import './ColorInputButton.scss'
 import { ChromePicker } from 'react-color' // https://casesandberg.github.io/react-color/
 
 const ColorInputButton = (props) => {
-    //const [active, setActive] = useState(false)
-
     return (
         <div className="ColorInputButton">
             <button onClick={() => props.showBtn(props.text, true)}>{props.hex}</button>

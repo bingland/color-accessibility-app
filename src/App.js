@@ -13,7 +13,7 @@ import EvaluationArea from './components/EvaluationArea/EvaluationArea'
 
 const App = () => {
 
-  const [backgroundColor, setBackgroundColor] = useState('#4C4CCC')
+  const [backgroundColor, setBackgroundColor] = useState('#3E3EBD')
   const [textColor, setTextColor] = useState('#FFFFFF')
 
   let contrast = chroma.contrast(textColor, backgroundColor).toFixed(1)
